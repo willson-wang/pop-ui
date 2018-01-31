@@ -1,0 +1,57 @@
+:root {
+    /* Transition
+  -------------------------- */
+    /* Colors
+  -------------------------- */
+    /* Border
+  -------------------------- */
+    /* Box-shadow
+  -------------------------- */
+    /* Font
+  -------------------------- */
+    /* Size
+  -------------------------- */
+    /* z-index
+  -------------------------- */
+    /* Disable base
+  -------------------------- */
+    /* Icon
+  -------------------------- */
+    /* Radio
+  -------------------------- */
+    /*
+     ----------- checkbox ---------------------
+    */
+    /* 
+     ------------------  button  ---------------------------------
+    */
+    /* 
+      --------------- popover ---------------------
+    */
+}
+.pop-select-item {
+    font-size: 14px;
+    padding: 8px 10px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #48576a;
+    height: 36px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    cursor: pointer
+}
+.pop-select-item:hover {
+        background-color: #a3aab7;
+        color: #fff
+}
+.pop-select-item.is-selected {
+        background-color: #5b81fe;
+        color: #fff
+}
+.pop-select-item.is-disabled {
+        background-color: #fff;
+        color: #a3aab7;
+        cursor: not-allowed
+}

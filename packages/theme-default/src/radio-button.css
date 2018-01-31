@@ -1,0 +1,74 @@
+@import './common/var.css';
+@b pop-radio-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 1;
+    @e original {
+        display: none;
+    }
+    @e label {
+        display: inline-block;
+        padding: 0 24px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        vertical-align: middle;
+        background-color: var(--radio-button-label-fill);
+        border: 1px solid var(--radio-button-label-border);
+        font-size: 12px;
+        border-right: 0;
+        border-left: 0;
+    }
+    &:first-of-type {
+        .pop-radio-button__label {
+            border-left: var(--radio-button-label-border);
+            border-top-left-radius: 25% 50%;
+            border-bottom-left-radius: 25% 50%;
+        }
+    }
+    &:last-of-type {
+        .pop-radio-button__label {
+            border-right: var(--radio-button-label-border);
+            border-top-right-radius: 25% 50%;
+            border-bottom-right-radius: 25% 50%;
+        }
+    }
+    @when active {
+        .pop-radio-button__label {
+            background-color: var(--radio-button-active-label-fill);
+            color: var(--radio-button-active-label-color);
+            border-top: var(--radio-button-active-label-border);
+            border-bottom: var(--radio-button-active-label-border);
+        }
+        &:first-of-type {
+            .pop-radio-button__label {
+                border-left: var(--radio-button-active-label-border);
+            }
+        }
+        &:last-of-type {
+            .pop-radio-button__label {
+                border-right: var(--radio-button-active-label-border);
+            }
+        }
+    }
+    @when disabled {
+        .pop-radio-button__label {
+            color: var(--radio-button-disabled-labe-color);
+            cursor: not-allowed;
+            background-image: none;
+            background-color: var(--radio-button-disabled-label-fill);
+            border-color: var(--radio-button-disabled-labe-border-color);
+        }
+        &:first-of-type {
+            .pop-radio-button__label {
+                border-left: 1px solid var(--radio-button-disabled-labe-border-color);
+            }
+        }
+        &:last-of-type {
+            .pop-radio-button__label {
+                border-right: 1px solid var(--radio-button-disabled-labe-border-color);
+            }
+        }
+    }
+}

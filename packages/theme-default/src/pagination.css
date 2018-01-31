@@ -1,0 +1,91 @@
+@import 'common/var.css';
+.pop-pagination-wrap {
+    width: 100%;
+    height: 60px;
+    background-color: var(--color-white);
+    padding-top: 15px;
+    color: var(--color-info2);
+    padding-left: 15px;
+    .pop-pagination__select {
+        float: left;
+        >span {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 12px;
+            cursor: pointer;
+        }
+    }
+    .pop-pagination {
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        color: var(--color-info2);
+        li {
+            float: left;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 15px;
+            border: var(--border-base);
+            margin-right: 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            outline: none;
+        }
+        .active {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+    }
+    .pop-pagination__jump {
+        float: left;
+        font-size: 0;
+        span,
+        input,
+        button {
+            display: inline-block;
+            vertical-align: middle;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            border: 0;
+            outline: none;
+        }
+        input {
+            width: 80px;
+            border-radius: 4px 0 0 4px;
+            border: var(--border-base);
+            text-indent: 10px;
+            margin-left: 12px;
+            color: var(--color-info2);
+        }
+        button {
+            width: 50px;
+            border-radius: 0 4px 4px 0;
+            border: var(--border-base);
+            background-color: var(--color-white);
+            border-left: 0;
+            line-height: 26px;
+            color: var(--color-info2);
+            margin-right: 20px;
+            cursor: pointer;
+        }
+    }
+    .pop-pagination__prev,
+    .pop-pagination__next {
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        border: var(--border-base);
+        margin-right: 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        outline: none;
+    }
+    .pop-pagination__bidden {
+        cursor: not-allowed;
+        color: var(--disabled-color-base);
+    }
+}

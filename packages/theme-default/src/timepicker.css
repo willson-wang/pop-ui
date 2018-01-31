@@ -1,0 +1,97 @@
+@import 'common/var.css';
+@b pop-timepicker {
+    display: inline-block;
+    @e input {
+        display: inline-block;
+    }
+}
+
+@b pop-timepicker-pannel {
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow-base);
+    @e content {
+        color: var(--color-info2);
+        li {
+            padding: 8px 10px;
+            font-size: 14px;
+            &:hover {
+                background-color: var(--color-bg);
+                cursor: pointer;
+            }
+        }
+    }
+    @e spinner {
+        width: 33.333%;
+    }
+    @e list {
+        color: var(--color-info2);
+        li {
+            height: 32px;
+            line-height: 32px;
+            font-size: 12px;
+            text-align: center;
+            &:hover {
+                background-color: var(--color-bg);
+                cursor: pointer;
+            }
+        }
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 80px;
+        }
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 80px;
+        }
+    }
+    @e mark {
+        font-size: 0;
+        position: relative;
+        &::before {
+            content: ":";
+            top: 50%;
+            color: #fff;
+            position: absolute;
+            font-size: 14px;
+            margin-top: -15px;
+            line-height: 16px;
+            background-color: #20a0ff;
+            height: 32px;
+            z-index: -1;
+            left: 0;
+            right: 0;
+            box-sizing: border-box;
+            padding-top: 6px;
+            text-align: left;
+            margin-right: -2px;
+            padding-left: 33.33333%;
+        }
+        &::after {
+            content: ":";
+            top: 50%;
+            color: #fff;
+            position: absolute;
+            font-size: 14px;
+            margin-top: -15px;
+            line-height: 16px;
+            background-color: #20a0ff;
+            height: 32px;
+            z-index: -1;
+            left: 0;
+            right: 0;
+            box-sizing: border-box;
+            padding-top: 6px;
+            text-align: left;
+            margin-left: -2px;
+            left: 66.66667%;
+        }
+    }
+}
+
+.pop-timepicker-pannel[x-placement^="bottom-start"] {
+    margin-top: 8px;
+}

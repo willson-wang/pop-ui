@@ -1,0 +1,123 @@
+:root {
+    /* Transition
+  -------------------------- */
+    /* Colors
+  -------------------------- */
+    /* Border
+  -------------------------- */
+    /* Box-shadow
+  -------------------------- */
+    /* Font
+  -------------------------- */
+    /* Size
+  -------------------------- */
+    /* z-index
+  -------------------------- */
+    /* Disable base
+  -------------------------- */
+    /* Icon
+  -------------------------- */
+    /* Radio
+  -------------------------- */
+    /*
+     ----------- checkbox ---------------------
+    */
+    /* 
+     ------------------  button  ---------------------------------
+    */
+    /* 
+      --------------- popover ---------------------
+    */
+}
+.pop-input {
+    display: inline-block;
+}
+.pop-input__group {
+        position: relative;
+        border-collapse: separate;
+        display: inline-table;
+}
+.pop-input__prepend {
+        display: table-cell;
+        padding: 0 10px;
+        background-color: #fbfdff;
+        color: #a3aab7;
+        border: 1px solid #e4eaec;
+        border-radius: 4px 0 0 4px;
+        cursor: pointer;
+        border-right: 0;
+        box-sizing: border-box;
+        vertical-align: middle;
+        width: 1px;
+}
+.pop-input__content {
+        display: table-cell;
+        position: relative;
+}
+.pop-input__content input:hover {
+    border-color: rgba(55, 62, 79, 0.4);
+}
+.pop-input__content input:disabled {
+    border-color: #d1dbe5;
+    color: #bfcbd9;
+    background-color: #eef1f6;
+    cursor: not-allowed;
+}
+.pop-input__content input {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    outline: none;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #e4eaec;
+    color: #767d8f;
+    padding: 3px 10px
+}
+.pop-input__content input:focus {
+    border-color: #5b81fe;
+}
+.pop-input__content.is-mini input {
+    height: 24px;
+    line-height: 24px;
+}
+.pop-input__content.is-small input {
+    height: 30px;
+    line-height: 30px;
+}
+.pop-input__content.is-large input {
+    height: 42px;
+    line-height: 42px;
+}
+.pop-input__icon {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        cursor: pointer;
+}
+.pop-input__append {
+        display: table-cell;
+        padding: 0 10px;
+        background-color: #fbfdff;
+        color: #a3aab7;
+        border: 1px solid #e4eaec;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        border-left: 0;
+        box-sizing: border-box;
+        vertical-align: middle;
+        width: 1px;
+}
+.pop-input__prepend .pop-select__input, .pop-input__prepend .pop-button, .pop-input__append .pop-select__input, .pop-input__append .pop-button {
+    border-color: transparent;
+    background-color: transparent;
+    color: inherit;
+    border-top: 0;
+    border-bottom: 0;
+}
+.pop-input__prepend .pop-select, .pop-input__prepend .pop-button, .pop-input__append .pop-select, .pop-input__append .pop-button {
+    display: block;
+    margin: -10px;
+}

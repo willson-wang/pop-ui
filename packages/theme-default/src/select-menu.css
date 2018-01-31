@@ -1,0 +1,18 @@
+@import 'common/var.css';
+.pop-select-menu {
+    padding: 8px 0;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow-base);
+    border-radius: 4px;
+}
+
+.pop-select-menu[x-placement^="bottom-start"] {
+    margin-top: 8px;
+}
+
+.pop-select-menu__empty {
+    margin: 0;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+}

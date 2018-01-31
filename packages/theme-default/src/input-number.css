@@ -1,0 +1,100 @@
+@import 'common/var.css';
+@b pop-input-number {
+    display: inline-block;
+    font-size: 0;
+    border: var(--border-base);
+    border-radius: 4px;
+    @when focus {
+        border-color: var(--color-primary);
+    }
+    @when disabled {
+        border-color: var(--disabled-border-base);
+    }
+    &:hover {
+        border-color: var(--color-info2);
+    }
+    @e decrease {
+        display: inline-block;
+        line-height: 1;
+        white-space: nowrap;
+        cursor: pointer;
+        text-align: center;
+        box-sizing: border-box;
+        outline: none;
+        margin: 0;
+        padding: 11px 15px;
+        font-size: 14px;
+        vertical-align: middle;
+        background: #fff;
+        color: #373e4f;
+        border-top: 0;
+        border-bottom: 0;
+        border-left: var(--border-base);
+        border-right: var(--border-base);
+        &:disabled {
+            color: var(--disabled-color-base);
+            cursor: not-allowed;
+            background-color: var(--disabled-fill-base);
+            border-left-color: var(--disabled-border-base);
+            border-right-color: var(--disabled-border-base);
+        }
+        &:hover {
+            color: var(--color-primary);
+        }
+        @when disabled {
+            color: var(--disabled-color-base);
+            cursor: not-allowed;
+        }
+        @when large {
+            padding: 14px 15px;
+        }
+        @when small {
+            padding: 8px 15px;
+        }
+    }
+    @e increase {
+        display: inline-block;
+        line-height: 1;
+        white-space: nowrap;
+        cursor: pointer;
+        text-align: center;
+        box-sizing: border-box;
+        outline: none;
+        margin: 0;
+        padding: 11px 15px;
+        font-size: 14px;
+        border-radius: 0 4px 4px 0;
+        vertical-align: middle;
+        background: #fff;
+        color: #373e4f;
+        border: 0;
+        &:disabled {
+            color: var(--disabled-color-base);
+            cursor: not-allowed;
+            background-color: var(--disabled-fill-base);
+        }
+        &:hover {
+            color: var(--color-primary);
+        }
+        @when disabled {
+            color: var(--disabled-color-base);
+            cursor: not-allowed;
+        }
+        @when large {
+            padding: 14px 15px;
+        }
+        @when small {
+            padding: 8px 15px;
+        }
+    }
+}
+
+.pop-input-number .pop-input__content input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 0;
+}
+
+.pop-input-number .pop-input {
+    vertical-align: middle;
+}

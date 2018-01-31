@@ -1,0 +1,55 @@
+.pop-checkbox-button.is-checked:last-of-type .pop-checkbox-button__label {
+    border-right: 1px solid var(--checkbox-button-label-checked-border-color);
+}
+.pop-checkbox-button.is-disabled:last-of-type .pop-checkbox-button__label {
+    border-right: 1px solid var(--checkbox-button-label-disabled-border-color);
+}
+.pop-checkbox-button:last-of-type .pop-checkbox-button__label {
+    border-right: var(--checkbox-button-label-border);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.pop-checkbox-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 1;
+}
+.pop-checkbox-button:first-of-type .pop-checkbox-button__label {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.pop-checkbox-button.is-disabled .pop-checkbox-button__label {
+    color: var(--checkbox-button-label-disabled-color);
+    cursor: not-allowed;
+    background-image: none;
+    background-color: var(--checkbox-button-label-disabled-fill);
+    border-color: var(--checkbox-button-label-disabled-border-color);
+}
+.pop-checkbox-button.is-disabled:first-of-type .pop-checkbox-button__label {
+    border-left: 1px solid var(--checkbox-button-label-disabled-border-color);
+}
+.pop-checkbox-button.is-checked .pop-checkbox-button__label {
+    background-color: var(--checkbox-button-label-checked-fill);
+    color: var(--checkbox-button-label-checked-color);
+    border-top: 1px solid var(--checkbox-button-label-checked-border-color);
+    border-bottom: 1px solid var(--checkbox-button-label-checked-border-color);
+}
+.pop-checkbox-button.is-checked:first-of-type .pop-checkbox-button__label {
+    border-left: 1px solid var(--checkbox-button-label-checked-border-color);
+}
+.pop-checkbox-button__original {
+        display: none;
+}
+.pop-checkbox-button__label {
+        display: inline-block;
+        padding: 0 20px;
+        height: 30px;
+        line-height: 30px;
+        vertical-align: middle;
+        font-size: 12px;
+        text-align: center;
+        background-color: var(--checkbox-button-label-fill);
+        border: var(--checkbox-button-label-border);
+        border-right: 0;
+}

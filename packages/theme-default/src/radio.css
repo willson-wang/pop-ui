@@ -1,0 +1,64 @@
+@import "./common/var.css";
+@b pop-radio {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 1;
+    margin-right: 12px;
+    @e original {
+        display: none;
+    }
+    @e input {
+        position: relative;
+        display: inline-block;
+        width: var(--radio-input-height);
+        height: var(--radio-input-width);
+        border-radius: var(--radio-input-border-radius);
+        background-color: var(--color-white);
+        border: var(--radio-input-border);
+        outline: none;
+        vertical-align: middle;
+        @when hover {
+            border: 1px solid var(--color-primary);
+        }
+        &::after {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--color-primary);
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform .15s cubic-bezier(.71, -.46, .88, .6);
+        }
+    }
+    @e label {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 12px;
+        margin-left: 6px;
+    }
+    @when checked {
+        .pop-radio__input {
+            &::after {
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+    }
+    @when disabled {
+        .pop-radio__input {
+            background-color: var(--radio-disabled-input-fill);
+            border-color: var(--radio-disabled-input-border-color);
+            cursor: not-allowed;
+            &::after {
+                background-color: var(--color-white);
+            }
+        }
+        .pop-radio__label {
+            color: var(--radio-disabled-label-color);
+            cursor: not-allowed;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+:root {
+    /* Transition
+  -------------------------- */
+    /* Colors
+  -------------------------- */
+    /* Border
+  -------------------------- */
+    /* Box-shadow
+  -------------------------- */
+    /* Font
+  -------------------------- */
+    /* Size
+  -------------------------- */
+    /* z-index
+  -------------------------- */
+    /* Disable base
+  -------------------------- */
+    /* Icon
+  -------------------------- */
+    /* Radio
+  -------------------------- */
+    /*
+     ----------- checkbox ---------------------
+    */
+    /* 
+     ------------------  button  ---------------------------------
+    */
+    /* 
+      --------------- popover ---------------------
+    */
+}
+.pop-dialog {
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+}
+.pop-dialog__header {
+        padding: 20px 20px 0;
+}
+.pop-dialog__title {
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #373e4f;
+}
+.pop-dialog__close {
+        float: right;
+        font-size: 16px;
+        cursor: pointer;
+}
+.pop-dialog__content {
+        font-size: 14px;
+        color: #767d8f;
+        padding: 30px 20px;
+}
+.pop-dialog__footer {
+        height: 60px;
+        line-height: 60px;
+        text-align: right;
+        padding: 0 20px;
+}
+.pop-dialog__modal {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+}
+.pop-dialog-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: auto;
+}
+.dialog-fade-enter-active {
+    animation: dialog-fade-in .3s;
+}
+.dialog-fade-leave-active {
+    animation: dialog-fade-out .3s;
+}
+@keyframes dialog-fade-in {
+    0% {
+        transform: translate3d(0, -20px, 0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+@keyframes dialog-fade-out {
+    0% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate3d(0, -20px, 0);
+        opacity: 0;
+    }
+}

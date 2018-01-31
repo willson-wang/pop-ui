@@ -1,0 +1,164 @@
+:root {
+    /* Transition
+  -------------------------- */
+    --all-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    --fade-transition: opacity 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    --fade-linear-transition: opacity 200ms linear;
+    --md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms, opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms;
+    --border-transition-base: border-color .2s cubic-bezier(.645, .045, .355, 1);
+    --color-transition-base: color .2s cubic-bezier(.645, .045, .355, 1);
+    /* Colors
+  -------------------------- */
+    --color-primary: #5b81fe;
+    --color-primary-hover: #7492f5;
+    --color-success: #35d87f;
+    --color-warning: #ffba34;
+    --color-danger: #ff455b;
+    --color-info: #50bfff;
+    --color-info1: #373e4f;
+    --color-info2: #767d8f;
+    --color-info3: #a3aab7;
+    --color-bg: #f0f5f7;
+    --color-deep-bg: #1e263a;
+    --color-white: #fff;
+    --color-shallow-white: #EFF2F7;
+    --color-transparent: transparent;
+    --color-text-primary: #303133;
+    --color-black: #000;
+    /* Border
+  -------------------------- */
+    --border-width-base: 1px;
+    --border-style-base: solid;
+    --border-color-base: #e4eaec;
+    --border-color-deep-base: #c4c4c4;
+    --border-color-lighter: #ebeef5;
+    --border-color-hover: var(--color-primary);
+    --border-base: var(--border-width-base) var(--border-style-base) var(--border-color-base);
+    --border-radius-base: 4px;
+    --border-radius-small: 2px;
+    --border-radius-circle: 100%;
+    --border-radius-half-circle: 50%;
+    /* Box-shadow
+  -------------------------- */
+    --box-shadow-base: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+    --box-shadow-dark: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .12);
+    /* Font
+  -------------------------- */
+    --font-size-base: 14px;
+    --font-color-base: var(--color-base-black);
+    --font-color-disabled-base: #bbb;
+    /* Size
+  -------------------------- */
+    --size-base: 14px;
+    /* z-index
+  -------------------------- */
+    --index-normal: 1;
+    --index-top: 1000;
+    --index-popper: 2000;
+    /* Disable base
+  -------------------------- */
+    --disabled-fill-base: #eef1f6;
+    --disabled-color-base: #bfcbd9;
+    --disabled-border-base: #d1dbe5;
+    /* Icon
+  -------------------------- */
+    --icon-color: #666;
+    /* Radio
+  -------------------------- */
+    --radio-color: var(--color-base-black);
+    --radio-input-height: 18px;
+    --radio-input-width: 18px;
+    --radio-input-border-radius: var(--border-radius-half-circle);
+    --radio-input-fill: var(--color-white);
+    --radio-input-border: var(--border-base);
+    --radio-input-border-color: var(--border-color-base);
+    --radio-icon-color: var(--color-white);
+    --radio-disabled-input-border-color: var(--disabled-border-base);
+    --radio-disabled-input-fill: var(--disabled-fill-base);
+    --radio-disabled-icon-color: var(--disabled-fill-base);
+    --radio-disabled-label-color: var(--disabled-color-base);
+    --radio-disabled-checked-input-fill: var(--disabled-border-base);
+    --radio-disabled-checked-input-border-color: var(--disabled-border-base);
+    --radio-disabled-checked-icon-color: var(--color-white);
+    --radio-checked-input-border-color: var(--color-primary);
+    --radio-checked-input-fill: var(--color-white);
+    --radio-checked-icon-color: var(--color-primary);
+    --radio-input-border-color-hover: var(--color-primary);
+    --radio-button-font-size: var(--font-size-base);
+    --radio-button-label-fill: var(--color-white);
+    --radio-button-label-border: var(--border-base);
+    --radio-button-active-label-fill: var(--color-primary);
+    --radio-button-active-label-color: var(--color-white);
+    --radio-button-active-label-border: var(--border-width-base) var(--border-style-base) var(--color-primary);
+    --radio-button-disabled-label-fill: var(--disabled-fill-base);
+    --radio-button-disabled-labe-color: var(--disabled-color-base);
+    --radio-button-disabled-labe-border-color: var(--disabled-border-base);
+    /*
+     ----------- checkbox ---------------------
+    */
+    --checkbox-input-height: 18px;
+    --checkbox-input-width: 18px;
+    --checkbox-input-fill: var(--color-white);
+    --checkbox-input-border: var(--border-base);
+    --checkbox-input-hover-border: var(--border-width-base) var(--border-style-base) var(--color-primary);
+    --checkbox-input-reveser-border-color: var(--color-white);
+    --checkbox-input-checked-border-color: var(--color-primary);
+    --checkbox-input-disabled-fill: var(--disabled-fill-base);
+    --checkbox-input-disabled-border-color: var(--disabled-border-base);
+    --checkbox-label-disabled-color: var(--disabled-border-base);
+    --checkbox-button-label-fill: var(--color-white);
+    --checkbox-button-label-border: var(--border-base);
+    --checkbox-button-label-checked-fill: var(--color-primary);
+    --checkbox-button-label-checked-color: var(--color-white);
+    --checkbox-button-label-checked-border-color: var(--color-primary);
+    --checkbox-button-label-disabled-color: var(--disabled-color-base);
+    --checkbox-button-label-disabled-fill: var(--disabled-fill-base);
+    --checkbox-button-label-disabled-border-color: var(--disabled-border-base);
+    /* 
+     ------------------  button  ---------------------------------
+    */
+    --button-border: var(--border-base);
+    --button-default-fill: var(--color-white);
+    --button-default-color: var(--color-info1);
+    --button-default-border-color: var(--border-color-deep-base);
+    --button-default-disabled-fill: var(--color-white);
+    --button-default-disabled-color: var(--disabled-color-base);
+    --button-default-disabled-border-color: var(--disabled-border-base);
+    --button-default-hover-color: var(--color-primary);
+    --button-default-hover-border-color: var(--color-primary);
+    --button-primary-fill: var(--color-primary);
+    --button-primary-color: var(--color-white);
+    --button-primary-border-color: var(--color-primary);
+    --button-primary-hover-fill: var(--color-primary-hover);
+    --button-primary-hover-border-color: var(--color-primary-hover);
+    --button-text-fill: var(--color-transparent);
+    --button-text-color: var(--color-info1);
+    --button-text-border-color: var(--color-transparent);
+    --button-text-hover-color: var(--color-info2);
+    --button-success-fill: var(--color-success);
+    --button-success-color: var(--color-white);
+    --button-success-border-color: var(--color-success);
+    --button-warning-fill: var(--color-warning);
+    --button-warning-color: var(--color-white);
+    --button-warning-border-color: var(--color-warning);
+    --button-danger-fill: var(--color-danger);
+    --button-danger-color: var(--color-white);
+    --button-danger-border-color: var(--color-danger);
+    --button-info-fill: var(--color-info);
+    --button-info-color: var(--color-white);
+    --button-info-border-color: var(--color-info);
+    /* 
+      --------------- popover ---------------------
+    */
+    --popover-fill: var(--color-white);
+    --popover-font-size: var(--font-size-base);
+    --popover-border-color: var(--border-color-lighter);
+    --popover-arrow-size: 6px;
+    --popover-arrow-size-12: 12px;
+    --popover-arrow-size-3: 3px;
+    --popover-padding: 12px;
+    --popover-padding-large: 18px 20px;
+    --popover-title-font-size: 16px;
+    --popover-title-color: var(--color-text-primary);
+    --popover-arrow-size: 6px;
+}

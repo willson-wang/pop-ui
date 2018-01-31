@@ -1,0 +1,75 @@
+@import 'common/var.css';
+@b pop-tag {
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    @e close {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        line-height: 12px;
+        text-align: center;
+        cursor: pointer;
+    }
+    @m default {
+        border-color: #8391a5;
+        background-color: #8391a5;
+        color: var(--color-white);
+        .pop-tag__close:hover {
+            background-color: var(--color-white);
+            border-radius: 50%;
+            color: #8391a5;
+        }
+    }
+    @m gray {
+        border-color: #e4e8f1;
+        background-color: #e4e8f1;
+        color: #48576a;
+        .pop-tag__close:hover {
+            background-color: #8391a5;
+            border-radius: 50%;
+            color: var(--color-white);
+        }
+    }
+    @m primary {
+        border-color: rgba(var(--color-primary), 0.5);
+        background-color: rgba(var(--color-primary), 0.3);
+        color: rgba(var(--color-primary), 1);
+        .pop-tag__close:hover {
+            background-color: var(--color-primary);
+            border-radius: 50%;
+            color: var(--color-white);
+        }
+    }
+    @m success {
+        border-color: rgba(var(--color-success), 0.5);
+        background-color: rgba(var(--color-success), 0.3);
+        color: rgba(var(--color-success), 1);
+        .pop-tag__close:hover {
+            background-color: var(--color-success);
+            border-radius: 50%;
+            color: var(--color-white);
+        }
+    }
+    @m warning {
+        border-color: rgba(var(--color-warning), 0.5);
+        background-color: rgba(var(--color-warning), 0.3);
+        color: rgba(var(--color-warning), 1);
+        .pop-tag__close:hover {
+            background-color: var(--color-warning);
+            border-radius: 50%;
+            color: var(--color-white);
+        }
+    }
+    @m danger {
+        border-color: rgba(var(--color-danger), 0.5);
+        background-color: rgba(var(--color-danger), 0.3);
+        color: rgba(var(--color-danger), 1);
+        .pop-tag__close:hover {
+            background-color: var(--color-danger);
+            border-radius: 50%;
+            color: var(--color-white);
+        }
+    }
+}

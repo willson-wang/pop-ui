@@ -1,0 +1,87 @@
+.pop-radio-button.is-active:last-of-type .pop-radio-button__label {
+    border-right: 1px solid #5b81fe;
+}.pop-radio-button.is-disabled:last-of-type .pop-radio-button__label {
+    border-right: 1px solid #d1dbe5;
+}.pop-radio-button:last-of-type .pop-radio-button__label {
+    border-right: 1px solid #e4eaec;
+    border-top-right-radius: 25% 50%;
+    border-bottom-right-radius: 25% 50%;
+}:root {
+    /* Transition
+  -------------------------- */
+    /* Colors
+  -------------------------- */
+    /* Border
+  -------------------------- */
+    /* Box-shadow
+  -------------------------- */
+    /* Font
+  -------------------------- */
+    /* Size
+  -------------------------- */
+    /* z-index
+  -------------------------- */
+    /* Disable base
+  -------------------------- */
+    /* Icon
+  -------------------------- */
+    /* Radio
+  -------------------------- */
+    /*
+     ----------- checkbox ---------------------
+    */
+    /* 
+     ------------------  button  ---------------------------------
+    */
+    /* 
+      --------------- popover ---------------------
+    */
+}
+.pop-radio-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 1;
+}
+.pop-radio-button:first-of-type .pop-radio-button__label {
+    border-left: 1px solid #e4eaec;
+    border-top-left-radius: 25% 50%;
+    border-bottom-left-radius: 25% 50%;
+}
+.pop-radio-button.is-disabled .pop-radio-button__label {
+    color: #bfcbd9;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: #eef1f6;
+    border-color: #d1dbe5;
+}
+.pop-radio-button.is-disabled:first-of-type .pop-radio-button__label {
+    border-left: 1px solid #d1dbe5;
+}
+.pop-radio-button.is-active .pop-radio-button__label {
+    background-color: #5b81fe;
+    color: #fff;
+    border-top: 1px solid #5b81fe;
+    border-bottom: 1px solid #5b81fe;
+}
+.pop-radio-button.is-active:first-of-type .pop-radio-button__label {
+    border-left: 1px solid #5b81fe;
+}
+.pop-radio-button__original {
+        display: none;
+}
+.pop-radio-button__label {
+        display: inline-block;
+        padding: 0 24px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        vertical-align: middle;
+        background-color: #fff;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #e4eaec;
+        font-size: 12px;
+        border-right: 0;
+        border-left: 0;
+}

@@ -1,0 +1,84 @@
+.pop-select__input:hover {
+            border-color: #767d8f;
+}:root {
+    /* Transition
+  -------------------------- */
+    /* Colors
+  -------------------------- */
+    /* Border
+  -------------------------- */
+    /* Box-shadow
+  -------------------------- */
+    /* Font
+  -------------------------- */
+    /* Size
+  -------------------------- */
+    /* z-index
+  -------------------------- */
+    /* Disable base
+  -------------------------- */
+    /* Icon
+  -------------------------- */
+    /* Radio
+  -------------------------- */
+    /*
+     ----------- checkbox ---------------------
+    */
+    /* 
+     ------------------  button  ---------------------------------
+    */
+    /* 
+      --------------- popover ---------------------
+    */
+}
+.pop-select-wrap {
+    display: inline-block;
+    position: relative;
+}
+.pop-select {
+    display: inline-block;
+}
+.pop-select__input {
+        border: 1px solid #e4eaec;
+        padding-left: 10px;
+        color: #373e4f;
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer;
+}
+.pop-select__input:focus {
+            border-color: #5b81fe;
+}
+.pop-select__input.is-mini {
+            width: 180px;
+            height: 24px;
+            line-height: 24px;
+}
+.pop-select__input.is-small {
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+}
+.pop-select__input.is-large {
+            width: 300px;
+            height: 42px;
+            line-height: 42px;
+}
+.pop-select__input.is-normal {
+            width: 240px;
+            height: 36px;
+            line-height: 36px;
+}
+.pop-select__input.is-disabled {
+            cursor: not-allowed;
+            background-color: #eef1f6;
+            border-color: #e4eaec;
+}
+.pop-select__down {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        cursor: pointer;
+}

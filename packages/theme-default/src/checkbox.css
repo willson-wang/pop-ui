@@ -1,0 +1,80 @@
+@import 'common/var.css';
+@b pop-checkbox {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 1;
+    margin-right: 12px;
+    @e original {
+        display: none;
+    }
+    @e input {
+        position: relative;
+        display: inline-block;
+        width: var(--checkbox-input-width);
+        height: var(--checkbox-input-height);
+        box-sizing: border-box;
+        background-color: var(--checkbox-input-fill);
+        border: var(--checkbox-input-border);
+        outline: none;
+        vertical-align: middle;
+        border-radius: 2px;
+        &:hover {
+            border: var(--checkbox-input-hover-border);
+        }
+        &::after {
+            position: absolute;
+            top: 1px;
+            left: 5px;
+            width: 4px;
+            height: 8px;
+            content: '';
+            border: 2px solid var(--color-white);
+            border-left: 0;
+            border-top: 0;
+            transform: rotate(45deg) scaleY(0);
+            transition: transform .15s cubic-bezier(.71, -.46, .88, .6) .05s;
+            transform-origin: center;
+        }
+    }
+    @e label {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 12px;
+        margin-left: 6px;
+    }
+    @when reveser {
+        .pop-checkbox__input {
+            background-color: var(--checkbox-input-reveser-border-color);
+        }
+        .pop-checkbox__input::after {
+            border: 2px solid var(--color-primary);
+            border-left: 0;
+            border-top: 0;
+        }
+    }
+    @when checked {
+        .pop-checkbox__input {
+            background-color: var(--checkbox-input-checked-border-color);
+        }
+        .pop-checkbox__input::after {
+            transform: rotate(45deg) scaleY(1);
+        }
+    }
+    @when disabled {
+        .pop-checkbox__input {
+            background-color: var(--checkbox-input-disabled-fill);
+            border-color: var(--checkbox-input-disabled-border-color);
+            cursor: not-allowed;
+        }
+        .pop-checkbox__input::after {
+            border: 2px solid var(--checkbox-input-disabled-border-color);
+            border-left: 0;
+            border-top: 0;
+        }
+        .pop-checkbox__label {
+            color: var(--checkbox-label-disabled-color);
+            cursor: not-allowed;
+        }
+    }
+}

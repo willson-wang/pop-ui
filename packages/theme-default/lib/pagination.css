@@ -1,0 +1,118 @@
+:root {
+    /* Transition
+  -------------------------- */
+    /* Colors
+  -------------------------- */
+    /* Border
+  -------------------------- */
+    /* Box-shadow
+  -------------------------- */
+    /* Font
+  -------------------------- */
+    /* Size
+  -------------------------- */
+    /* z-index
+  -------------------------- */
+    /* Disable base
+  -------------------------- */
+    /* Icon
+  -------------------------- */
+    /* Radio
+  -------------------------- */
+    /*
+     ----------- checkbox ---------------------
+    */
+    /* 
+     ------------------  button  ---------------------------------
+    */
+    /* 
+      --------------- popover ---------------------
+    */
+}
+.pop-pagination-wrap {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    padding-top: 15px;
+    color: #767d8f;
+    padding-left: 15px;
+}
+.pop-pagination-wrap .pop-pagination__select {
+    float: left;
+}
+.pop-pagination-wrap .pop-pagination__select >span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.pop-pagination-wrap .pop-pagination {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #767d8f;
+}
+.pop-pagination-wrap .pop-pagination li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    border: 1px solid #e4eaec;
+    margin-right: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+.pop-pagination-wrap .pop-pagination .active {
+    background-color: #5b81fe;
+    color: #fff;
+}
+.pop-pagination-wrap .pop-pagination__jump {
+    float: left;
+    font-size: 0;
+}
+.pop-pagination-wrap .pop-pagination__jump span, .pop-pagination-wrap .pop-pagination__jump input, .pop-pagination-wrap .pop-pagination__jump button {
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    border: 0;
+    outline: none;
+}
+.pop-pagination-wrap .pop-pagination__jump input {
+    width: 80px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #e4eaec;
+    text-indent: 10px;
+    margin-left: 12px;
+    color: #767d8f;
+}
+.pop-pagination-wrap .pop-pagination__jump button {
+    width: 50px;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #e4eaec;
+    background-color: #fff;
+    border-left: 0;
+    line-height: 26px;
+    color: #767d8f;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.pop-pagination-wrap .pop-pagination__prev, .pop-pagination-wrap .pop-pagination__next {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 1px solid #e4eaec;
+    margin-right: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+.pop-pagination-wrap .pop-pagination__bidden {
+    cursor: not-allowed;
+    color: #bfcbd9;
+}

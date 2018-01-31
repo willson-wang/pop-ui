@@ -1,0 +1,27 @@
+@import 'common/var.css';
+.pop-select-item {
+    font-size: 14px;
+    padding: 8px 10px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #48576a;
+    height: 36px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    cursor: pointer;
+    &:hover {
+        background-color: var(--color-info3);
+        color: var(--color-white);
+    }
+    @when disabled {
+        background-color: var(--color-white);
+        color: var(--color-info3);
+        cursor: not-allowed;
+    }
+    @when selected {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
+}

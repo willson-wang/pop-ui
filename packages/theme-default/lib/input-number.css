@@ -1,0 +1,126 @@
+.pop-input-number__increase:hover {
+            color: #5b81fe;
+}.pop-input-number__decrease:hover {
+            color: #5b81fe;
+}:root {
+    /* Transition
+  -------------------------- */
+    /* Colors
+  -------------------------- */
+    /* Border
+  -------------------------- */
+    /* Box-shadow
+  -------------------------- */
+    /* Font
+  -------------------------- */
+    /* Size
+  -------------------------- */
+    /* z-index
+  -------------------------- */
+    /* Disable base
+  -------------------------- */
+    /* Icon
+  -------------------------- */
+    /* Radio
+  -------------------------- */
+    /*
+     ----------- checkbox ---------------------
+    */
+    /* 
+     ------------------  button  ---------------------------------
+    */
+    /* 
+      --------------- popover ---------------------
+    */
+}
+.pop-input-number {
+    display: inline-block;
+    font-size: 0;
+    border: 1px solid #e4eaec;
+    border-radius: 4px;
+}
+.pop-input-number:hover {
+        border-color: #767d8f;
+}
+.pop-input-number.is-disabled {
+        border-color: #d1dbe5;
+}
+.pop-input-number.is-focus {
+        border-color: #5b81fe;
+}
+.pop-input-number__decrease {
+        display: inline-block;
+        line-height: 1;
+        white-space: nowrap;
+        cursor: pointer;
+        text-align: center;
+        box-sizing: border-box;
+        outline: none;
+        margin: 0;
+        padding: 11px 15px;
+        font-size: 14px;
+        vertical-align: middle;
+        background: #fff;
+        color: #373e4f;
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 1px solid #e4eaec;
+        border-right: 1px solid #e4eaec;
+}
+.pop-input-number__decrease:disabled {
+            color: #bfcbd9;
+            cursor: not-allowed;
+            background-color: #eef1f6;
+            border-left-color: #d1dbe5;
+            border-right-color: #d1dbe5;
+}
+.pop-input-number__decrease.is-small {
+            padding: 8px 15px;
+}
+.pop-input-number__decrease.is-large {
+            padding: 14px 15px;
+}
+.pop-input-number__decrease.is-disabled {
+            color: #bfcbd9;
+            cursor: not-allowed;
+}
+.pop-input-number__increase {
+        display: inline-block;
+        line-height: 1;
+        white-space: nowrap;
+        cursor: pointer;
+        text-align: center;
+        box-sizing: border-box;
+        outline: none;
+        margin: 0;
+        padding: 11px 15px;
+        font-size: 14px;
+        border-radius: 0 4px 4px 0;
+        vertical-align: middle;
+        background: #fff;
+        color: #373e4f;
+        border: 0;
+}
+.pop-input-number__increase:disabled {
+            color: #bfcbd9;
+            cursor: not-allowed;
+            background-color: #eef1f6;
+}
+.pop-input-number__increase.is-small {
+            padding: 8px 15px;
+}
+.pop-input-number__increase.is-large {
+            padding: 14px 15px;
+}
+.pop-input-number__increase.is-disabled {
+            color: #bfcbd9;
+            cursor: not-allowed;
+}
+.pop-input-number .pop-input__content input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 0;
+}
+.pop-input-number .pop-input {
+    vertical-align: middle;
+}

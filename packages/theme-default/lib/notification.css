@@ -1,0 +1,100 @@
+:root {
+    /* Transition
+  -------------------------- */
+    /* Colors
+  -------------------------- */
+    /* Border
+  -------------------------- */
+    /* Box-shadow
+  -------------------------- */
+    /* Font
+  -------------------------- */
+    /* Size
+  -------------------------- */
+    /* z-index
+  -------------------------- */
+    /* Disable base
+  -------------------------- */
+    /* Icon
+  -------------------------- */
+    /* Radio
+  -------------------------- */
+    /*
+     ----------- checkbox ---------------------
+    */
+    /* 
+     ------------------  button  ---------------------------------
+    */
+    /* 
+      --------------- popover ---------------------
+    */
+}
+.pop-notification {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    min-width: 300px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: opacity .3s, transform .3s, left .3s, right .3s, top 0.4s, bottom .3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+    padding: 20px 10px;
+    border-radius: 4px;
+}
+.pop-notification__icon {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius: 50%;
+}
+.pop-notification__icon--info {
+            color: #fff;
+            background-color: #50bfff;
+}
+.pop-notification__icon--success {
+            background-color: #35d87f;
+            color: #fff;
+}
+.pop-notification__icon--warning {
+            background-color: #ffba34;
+            color: #fff;
+}
+.pop-notification__icon--error {
+            background-color: #ff455b;
+            color: #fff;
+}
+.pop-notification__group {
+        float: left;
+}
+.pop-notification__title {
+        padding-left: 10px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+}
+.pop-notification__content {
+        padding-left: 10px;
+        font-size: 14px;
+}
+.pop-notification__closeBtn {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        cursor: pointer;
+        font-size: 20px;
+}
+.pop-notification-fade-enter {
+    right: 0;
+    -ms-transform: translateX(100%);
+        transform: translateX(100%);
+}
+.pop-notification-fade-leave-active {
+    opacity: 0;
+    right: -10px;
+}

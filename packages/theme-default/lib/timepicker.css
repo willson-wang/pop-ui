@@ -1,0 +1,123 @@
+.pop-timepicker-pannel__mark::after {
+            content: ":";
+            top: 50%;
+            color: #fff;
+            position: absolute;
+            font-size: 14px;
+            margin-top: -15px;
+            line-height: 16px;
+            background-color: #20a0ff;
+            height: 32px;
+            z-index: -1;
+            left: 0;
+            right: 0;
+            box-sizing: border-box;
+            padding-top: 6px;
+            text-align: left;
+            margin-left: -2px;
+            left: 66.66667%;
+}.pop-timepicker-pannel__list::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 80px;
+}:root {
+    /* Transition
+  -------------------------- */
+    /* Colors
+  -------------------------- */
+    /* Border
+  -------------------------- */
+    /* Box-shadow
+  -------------------------- */
+    /* Font
+  -------------------------- */
+    /* Size
+  -------------------------- */
+    /* z-index
+  -------------------------- */
+    /* Disable base
+  -------------------------- */
+    /* Icon
+  -------------------------- */
+    /* Radio
+  -------------------------- */
+    /*
+     ----------- checkbox ---------------------
+    */
+    /* 
+     ------------------  button  ---------------------------------
+    */
+    /* 
+      --------------- popover ---------------------
+    */
+}
+.pop-timepicker {
+    display: inline-block;
+}
+.pop-timepicker__input {
+        display: inline-block;
+}
+.pop-timepicker-pannel {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+}
+.pop-timepicker-pannel__content {
+        color: #767d8f;
+}
+.pop-timepicker-pannel__content li {
+            padding: 8px 10px;
+            font-size: 14px
+}
+.pop-timepicker-pannel__content li:hover {
+            background-color: #f0f5f7;
+            cursor: pointer;
+}
+.pop-timepicker-pannel__spinner {
+        width: 33.333%;
+}
+.pop-timepicker-pannel__list {
+        color: #767d8f;
+}
+.pop-timepicker-pannel__list li {
+            height: 32px;
+            line-height: 32px;
+            font-size: 12px;
+            text-align: center
+}
+.pop-timepicker-pannel__list li:hover {
+            background-color: #f0f5f7;
+            cursor: pointer;
+}
+.pop-timepicker-pannel__list::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 80px;
+}
+.pop-timepicker-pannel__mark {
+        font-size: 0;
+        position: relative;
+}
+.pop-timepicker-pannel__mark::before {
+            content: ":";
+            top: 50%;
+            color: #fff;
+            position: absolute;
+            font-size: 14px;
+            margin-top: -15px;
+            line-height: 16px;
+            background-color: #20a0ff;
+            height: 32px;
+            z-index: -1;
+            left: 0;
+            right: 0;
+            box-sizing: border-box;
+            padding-top: 6px;
+            text-align: left;
+            margin-right: -2px;
+            padding-left: 33.33333%;
+}
+.pop-timepicker-pannel[x-placement^="bottom-start"] {
+    margin-top: 8px;
+}

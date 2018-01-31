@@ -1,0 +1,25 @@
+.pop-button-group {
+    font-size: 0;
+}
+
+.pop-button-group .pop-button:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-color: rgba(#fff, 0.5);
+}
+
+.pop-button-group .pop-button:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-color: rgba(#fff, 0.5);
+}
+
+.pop-button-group .pop-button:not(:first-child):not(:last-child) {
+    border-radius: 0;
+    border-left-color: rgba(#fff, 0.5);
+    border-right-color: rgba(#fff, 0.5);
+}
+
+.pop-button-group .pop-button:not(:last-child) {
+    margin-right: -1px;
+}

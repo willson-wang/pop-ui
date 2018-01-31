@@ -1,0 +1,55 @@
+@import 'common/var.css';
+.pop-select-wrap {
+    display: inline-block;
+    position: relative;
+}
+
+@b pop-select {
+    display: inline-block;
+    @e input {
+        border: var(--border-base);
+        padding-left: 10px;
+        color: var(--color-info1);
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer;
+        &:focus {
+            border-color: var(--color-primary);
+        }
+        &:hover {
+            border-color: var(--color-info2);
+        }
+        @when disabled {
+            cursor: not-allowed;
+            background-color: #eef1f6;
+            border-color: var(--border-color-base);
+        }
+        @when normal {
+            width: 240px;
+            height: 36px;
+            line-height: 36px;
+        }
+        @when large {
+            width: 300px;
+            height: 42px;
+            line-height: 42px;
+        }
+        @when small {
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+        }
+        @when mini {
+            width: 180px;
+            height: 24px;
+            line-height: 24px;
+        }
+    }
+    @e down {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+}

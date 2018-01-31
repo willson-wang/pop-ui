@@ -1,0 +1,58 @@
+@import 'common/var.css';
+@b pop-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 300px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: opacity 0.3s, transform .4s;
+    box-shadow: var(--box-shadow-base);
+    @e logo {
+        float: left;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 20px;
+        @m info {
+            background-color: var(--color-info);
+            color: #fff;
+        }
+        @m success {
+            background-color: var(--color-success);
+            color: #fff;
+        }
+        @m warning {
+            background-color: var(--color-warning);
+            color: #fff;
+        }
+        @m error {
+            background-color: var(--color-danger);
+            color: #fff;
+        }
+    }
+    @e group {
+        float: left;
+    }
+    @e content {
+        padding-left: 10px;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+    }
+    @e closeBtn {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+}
+
+.pop-message-fade-enter,
+.pop-message-fade-leave-active {
+    opacity: 0;
+    transform: translate(-50%, -100%);
+}

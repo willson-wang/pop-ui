@@ -1,0 +1,105 @@
+:root {
+    /* Transition
+  -------------------------- */
+    /* Colors
+  -------------------------- */
+    /* Border
+  -------------------------- */
+    /* Box-shadow
+  -------------------------- */
+    /* Font
+  -------------------------- */
+    /* Size
+  -------------------------- */
+    /* z-index
+  -------------------------- */
+    /* Disable base
+  -------------------------- */
+    /* Icon
+  -------------------------- */
+    /* Radio
+  -------------------------- */
+    /*
+     ----------- checkbox ---------------------
+    */
+    /* 
+     ------------------  button  ---------------------------------
+    */
+    /* 
+      --------------- popover ---------------------
+    */
+}
+.pop-tag {
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+.pop-tag__close {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        line-height: 12px;
+        text-align: center;
+        cursor: pointer;
+}
+.pop-tag--default {
+        border-color: #8391a5;
+        background-color: #8391a5;
+        color: #fff;
+}
+.pop-tag--default .pop-tag__close:hover {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #8391a5;
+}
+.pop-tag--gray {
+        border-color: #e4e8f1;
+        background-color: #e4e8f1;
+        color: #48576a;
+}
+.pop-tag--gray .pop-tag__close:hover {
+    background-color: #8391a5;
+    border-radius: 50%;
+    color: #fff;
+}
+.pop-tag--primary {
+        border-color: rgba(91, 129, 254, 0.5);
+        background-color: rgba(91, 129, 254, 0.3);
+        color: rgb(91, 129, 254);
+}
+.pop-tag--primary .pop-tag__close:hover {
+    background-color: #5b81fe;
+    border-radius: 50%;
+    color: #fff;
+}
+.pop-tag--success {
+        border-color: rgba(53, 216, 127, 0.5);
+        background-color: rgba(53, 216, 127, 0.3);
+        color: rgb(53, 216, 127);
+}
+.pop-tag--success .pop-tag__close:hover {
+    background-color: #35d87f;
+    border-radius: 50%;
+    color: #fff;
+}
+.pop-tag--warning {
+        border-color: rgba(255, 186, 52, 0.5);
+        background-color: rgba(255, 186, 52, 0.3);
+        color: rgb(255, 186, 52);
+}
+.pop-tag--warning .pop-tag__close:hover {
+    background-color: #ffba34;
+    border-radius: 50%;
+    color: #fff;
+}
+.pop-tag--danger {
+        border-color: rgba(255, 69, 91, 0.5);
+        background-color: rgba(255, 69, 91, 0.3);
+        color: rgb(255, 69, 91);
+}
+.pop-tag--danger .pop-tag__close:hover {
+    background-color: #ff455b;
+    border-radius: 50%;
+    color: #fff;
+}

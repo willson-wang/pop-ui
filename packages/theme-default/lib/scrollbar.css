@@ -1,0 +1,45 @@
+.pop-scrollbar {
+    overflow: hidden;
+    position: relative;
+}
+.pop-scrollbar:hover >.pop-scrollbar__bar, .pop-scrollbarfocus >.pop-scrollbar__bar, .pop-scrollbar:active >.pop-scrollbar__bar {
+    opacity: 1;
+}
+.pop-scrollbar__view {
+        overflow: scroll;
+}
+.pop-scrollbar__bar {
+        position: absolute;
+        right: 2px;
+        bottom: 2px;
+        z-index: 2;
+        border-radius: 4px;
+        opacity: 0;
+        transition: opacity 120ms ease-out;
+}
+.pop-scrollbar__bar.is-horizontal {
+            height: 6px;
+            left: 2px;
+}
+.pop-scrollbar__bar.is-horizontal >div {
+    width: 12%;
+    height: 100%;
+}
+.pop-scrollbar__bar.is-vertical {
+            width: 6px;
+            top: 2px;
+}
+.pop-scrollbar__bar.is-vertical >div {
+    width: 100%;
+    height: 12%;
+}
+.pop-scrollbar__thumb {
+        position: absolute;
+        border-radius: inherit;
+        cursor: pointer;
+        background-color: rgba(151, 168, 190, .3);
+        transition: .3s background-color;
+}
+.pop-scrollbar__thumb:hover {
+            background-color: rgba(151, 168, 190, 1);
+}

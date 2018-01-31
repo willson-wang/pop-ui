@@ -1,0 +1,10 @@
+.pop-zoom-in-center-enter-active,
+.pop-zoom-in-center-leave-active {
+    transition: all .3s cubic-bezier(.55, 0, .1, 1);
+}
+
+.pop-zoom-in-center-enter,
+.pop-zoom-in-center-leave-active {
+    opacity: 0;
+    transform: scaleX(0);
+}

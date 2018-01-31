@@ -1,0 +1,70 @@
+@import 'common/var.css';
+@b pop-notification {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    min-width: 300px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: opacity .3s, transform .3s, left .3s, right .3s, top 0.4s, bottom .3s;
+    box-shadow: var(--box-shadow-base);
+    padding: 20px 10px;
+    border-radius: 4px;
+    @e icon {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        @m info {
+            color: #fff;
+            background-color: var(--color-info);
+        }
+        @m success {
+            background-color: var(--color-success);
+            color: #fff;
+        }
+        @m warning {
+            background-color: var(--color-warning);
+            color: #fff;
+        }
+        @m error {
+            background-color: var(--color-danger);
+            color: #fff;
+        }
+    }
+    @e group {
+        float: left;
+    }
+    @e title {
+        padding-left: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+    @e content {
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    @e closeBtn {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+}
+
+.pop-notification-fade-enter {
+    right: 0;
+    transform: translateX(100%);
+}
+
+.pop-notification-fade-leave-active {
+    opacity: 0;
+    right: -10px;
+}
